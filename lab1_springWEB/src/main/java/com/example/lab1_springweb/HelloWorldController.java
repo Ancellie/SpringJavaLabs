@@ -9,6 +9,42 @@ public class HelloWorldController {
     @GetMapping("/")
     @ResponseBody
     String helloWorld() {
-        return "Hello World";
+        return "<h1>" +
+                "<a href=\"http://localhost:8080/Oleg\">Hello from Oleg</a> <br>" +
+                "<a href=\"http://localhost:8080/Olexandr\">Hello from Olexandr</a> <br>" +
+                "<a href=\"http://localhost:8080/Marat\">Hello from Marat</a> <br>" +
+                "<a href=\"http://localhost:8080/Sviatoslav\">Hello from Sviatoslav</a> <br>" +
+                "<a href=\"http://localhost:8080/Nazarii\">Hello from Nazarii</a> <br>" +
+                "</h1>";
+    }
+
+    @GetMapping("/Oleg")
+    @ResponseBody
+    String helloWorldOleg() {
+        return "<h1>My name is Oleg, Hi all!</h1>";
+    }
+
+    @GetMapping("/Olexandr")
+    @ResponseBody
+    String helloWorldOlexandr() {
+        return "<h1>My name is Olexandr, Hi all!</h1>";
+    }
+
+    @GetMapping("/Marat")
+    @ResponseBody
+    String helloWorldMarat() {
+        return "<h1>My name is Marat, Hi all!</h1>";
+    }
+
+    @GetMapping("/Sviatoslav")
+    @ResponseBody
+    String helloWorldSviatoslav() {
+        return "<h1>My name is Sviatoslav, Hi all!</h1>";
+    }
+
+    @GetMapping("/Nazarii")
+    @ResponseBody
+    String helloWorldNazarii() {
+        return "<h1>My name is Nazarii, Hi all!</h1>";
     }
 }
